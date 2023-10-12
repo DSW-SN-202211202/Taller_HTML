@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Personal WebPage</h1>
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn btn-info" onclick="irAn('about')">
+                        About Me
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-info" onclick=" irAn('projects')">
+                        Projects
+                    </button>
+                </div>
+                
+                <div class="col-3">
+                    <button class="btn btn-info" onclick=" irAn('contact')">
+                        Contact
+                    </button>
+                </div>
+
+                <script>
+                    function irAn(link) {
+                        document
+                            .getElementById(link)
+                            .scrollIntoView({ behavior: "smooth" });
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row" id="row2">
+                    <div class="col-5">
+                        <img src="src/foto.jpg" alt="Avatar" class="avatar" />
+                        <p class="nombre_propio">Santiago Navarrete</p>
+                        <p>System's engineering Student</p>
+                        <a href="https://uniandes.edu.co/">Universidad de los Andes</a>
+                        <div class="container-fluid">
+                            <div class="row" id="row4">
+                                <div class="col-3">
+                                    <img src="src/linkedin.png" onclick="imagenclick('linkedin')" class="icon" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="src/github.png" onclick="imagenclick('github')" class="icon" />
+                                </div>
+                                <div class="col-3">
+                                    <img src="src/instagram.png" onclick="imagenclick('insta')" class="icon" />
+                                </div>
+                                <script>
+                                    function imagenclick(link) {
+                                        if (link == "linkedin") {
+                                            window.open(
+                                                "https://www.linkedin.com/in/santiagonavarrete19/"
+                                            );
+                                        } else if (link == "github") {
+                                            window.open("https://github.com/Navasanti19");
+                                        } else if (link == "insta") {
+                                            window.open("https://www.instagram.com/nava_santi/");
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <h2>About Me</h2>
+                        <p>
+                            About general facts, I am 19 years old, I study systems
+                            engineering and I this is my fourth semester. Now, talking about
+                            the reason I chose this major, It can be resumed in three words
+                            "I love it". I think that technology can lead society to a
+                            better world, also that it can help everyone to have a easier
+                            and happier life (I'm sure we all love to see memes about news
+                            instead of reading them on a newspaper). Secondly, in the
+                            future, I want to focus in Artificial Intelligence field. I
+                            think that this new "tool" is going to help our lives in a way
+                            that we could'nt imagine. In conclsuion, I want to be part of
+                            the future.
+                        </p>
+                        <div class="container-fluid">
+                            <div class="row" id="row3">
+                                <div class="col-5">
+                                    <h3>Skills</h3>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                        <li>C / C++</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-5">
+                                    <h3>Interests</h3>
+                                    <ul>
+                                        <li>AI</li>
+                                        <li>Software Development</li>
+                                        <li>Big Tech</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="project">Projects</h2>
+            <div class="container-fluid">
+                <div class="row" id="row5">
+                    <div class="col-5">
+                        <h3>Visitas Ecológicas</h3>
+                        <img src="src/caminata.jpg" alt="Visitas Ecológicas" class="foticos" />
+                        <p>
+                            El proyecto de la compañía 'Visitas Ecológicas' busca crear una
+                            aplicación web para facilitar a los ciudadanos el acceso a los
+                            56 espacios protegidos de Colombia, que incluyen parques
+                            naturales y santuarios de flora y fauna. La app se encargaría de
+                            la organización completa del viaje, desde las reservas y pagos
+                            hasta el transporte y la logística, además de ofrecer un
+                            calendario de visitas adaptado a las condiciones climáticas y de
+                            disponibilidad de cada parque. La plataforma estaría diseñada
+                            para proporcionar una amplia gama de detalles sobre cada visita:
+                            parque específico, actividades disponibles, duración, nivel de
+                            dificultad, equipo necesario y restricciones, todo acompañado
+                            por un guía experto.
+                        </p>
+
+                        <a href="https://docs.google.com/document/d/1LF_I6NlAgpgdzOpxkR5XdaP5QWR7ZOeHnYlZfYhLWSk/edit">Ver Más</a>
+                    </div>
+
+                    <div class="col-5">
+                        <h3>Parranderos</h3>
+                        <img src="src/bar.jpg" alt="Project 2" class="foticos" />
+                        <p>
+                            El proyecto de la compañía 'Parranderos busca crear una
+                            aplicación web para facilitar el acceso a la informacion sobre
+                            los bares y los bebedores de Colombia, que incluyen bares
+                            frecuentados, bebedores, y tipos de bebida servidas. La app se
+                            encargaría de la organización completa de la informacion. La app
+                            ofrece la posibilidad de filtrar y consultas los distintos tipos
+                            de bebedores, segun su presupuesto. Además, permite la
+                            filtracion de datos avanzada como buscar que bebedores
+                            frecuentan cuales bares dependeiendos de unas condiciones.
+                        </p>
+                        <a href="https://disc-isis2304-st.github.io/Desarrollo-de-aplicaciones-web-con-capa-de-datos/">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <section id="contact">
+        <h2 class="project">Contact Me</h2>
+        
+        <div class="zona-formulario">
+            <div class="container-fluid">
+                <div class="row" id="row6">
+                    <p> Feel free to contact me at any time, suscribe!!!</p>
+                    <div class="col-6">
+            <form action="" method="" class="fo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required><br><br>
+        
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required><br><br>
+        
+              <button class="btn btn-success" onclick="alertar()">
+                Suscribirse
+            </button>
+            <script>
+                function alertar() {
+                    alert("Gracias por suscribirte");
+                }
+            </script>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+        <b>Email: </b> s.navarretev@uniandes.edu.co  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Phone</b>: 3212346442 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Location</b>: Bogotá,
+        Colombia
+    </section>
+</main>
+</body>
+
+</html>

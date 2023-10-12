@@ -1,0 +1,92 @@
+
+/* body {
+ background-color: rgb(155, 86, 138);
+ font-family: times;
+ font-size: 25px;
+} */
+/* h1 {
+ color: rgb(213, 32, 32);
+ text-align: center;
+} */
+.avatar{
+    border-radius: 50%;
+    width: 250px;
+    height: 300px;
+    border: 6px solid #000;
+    margin-top: 50px;
+  }
+
+  .icon{
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+  }
+
+.nombre_propio {
+    color: rgb(15, 9, 95);
+    font-family: 'Helvetica';
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+   
+   }
+   .titulo {
+    color: rgb(15, 9, 95);
+    font-family: 'Helvetica';
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+   
+   }
+.row {
+    display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-top:25px;
+margin-bottom:50px;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+#row3 {
+    margin-top: 50px;
+margin-bottom: 50px;
+    display: flex;
+text-align: left;
+background-color: rgb(223, 176, 255);
+}
+#row2{
+
+background-color: rgb(157, 175, 255);
+}
+
+.project{
+    margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.foticos{
+    width: 500px;
+    height: 300px;
+    
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.zona_formulario{
+    margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+
